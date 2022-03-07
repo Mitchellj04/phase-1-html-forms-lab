@@ -12,10 +12,14 @@
 
     <!-- First, create a form tag where our inputs will be nested -->
 <form action="http://127.0.0.1:5501/index.html" method="GET">
-<input type="text" name = "fullname" placeholder="Enter Name" required>
-<input type="email" name = "Email" placeholder="Enter Email" required>
-<input type="tel" name="telephone" placeholder="Enter Phone Number">
-<input type="textarea" name ="textarea" placeholder="Enter Message">
+<label for="fullname">Full Name</label>
+<input type="text" id="fullname" name="fullname" placeholder="Enter Name" required>
+<label for="email">Email</form>/label>
+<input type="email" id="email" name="email" placeholder="Enter Email" required>
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" placeholder="Enter Telephone (optional)">
+<label for="message">Enter Message</label>
+<textarea id="message" name="message" placeholder="Enter Message">
 <h3>Are you new here?</h3>
 <input type="checkbox" name="box1" value="Yes" /> Yes <br/>
 <input type="checkbox" name="box2" value="No" />No<br/>
